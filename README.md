@@ -1,5 +1,5 @@
 # Eye Tracking for Everyone
-This is an implementation in **Keras** and **Tensorflow** backend  of the famous paper published in CVPR 2016 by Torralba et al.
+This is an implementation in **Keras** and **Tensorflow** backend  of the famous paper published in CVPR 2016 by *Torralba et al*.
 
 ## How To
 ### Configuration
@@ -33,7 +33,7 @@ You can pass the following arguments:
 - ```-patience```: early stopping
 
 ## Results
-Results are obtained on two types of input images: 64x64 and 224x224 (as in the original paper) and are expressed in term of Mean Absolute Error (MAE) and Standard Deviation (STD). The network has been tested on both datasets.
+Results are obtained on two types of input images: 64x64 and 224x224 (as in the original paper) and are expressed in term of *Mean Absolute Error* (MAE) and *Standard Deviation* (STD). The network has been tested on both datasets.
 
 ### Small dataset 
 This dataset consist of 48k train images and 5k test images. All face detections are valid and all coordinates are positives.
@@ -52,4 +52,4 @@ This dataset consist of 48k train images and 5k test images. All face detections
 
 
 ## Acknowledgements
-This work is partially inspired by the work of [hugochan](https://github.com/hugochan) 
+This work is partially inspired by the work of [hugochan](https://github.com/hugochan).
