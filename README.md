@@ -32,5 +32,24 @@ You can pass the following arguments:
 - ```-batch_size```: size fo the batch size, to specify accordingly to your GPU memory
 - ```-patience```: early stopping
 
+## Results
+Results are obtained on two types of input images: 64x64 and 224x224 (as in the original paper) and are expressed in term of Mean Absolute Error (MAE) and Standard Deviation (STD). The network has been tested on both datasets.
+
+### Small dataset 
+This dataset consist of 48k train images and 5k test images. All face detections are valid and all coordinates are positives.
+
+| Input Size   | MAE            | STD           |
+| :---         |     :---:      |          ---: |
+|64x64         | -              | -             |
+|224x224       | -              | -             |
+
+### Original dataset
+
+| Input Size   | MAE            | STD           |
+| :---         |     :---:      |          ---: |
+|64x64         | -              | -             |
+|224x224       | -              | -             |
+
+
 ## Acknowledgements
 This work is partially inspired by the work of [hugochan](https://github.com/hugochan) 
