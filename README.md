@@ -39,9 +39,9 @@ Results are obtained on two types of input images: 64x64 and 224x224 (as in the 
 This dataset consist of 48k train images and 5k test images. All face detections are valid and all coordinates are positives.
 
 | Input Size   | MAE            | STD           |
-| :---         |     :---:      |          ---: |
-|64x64         | -              | -             |
-|224x224       | -              | -             |
+| :---         |     :---:         |             ---: |
+|64x64         | 1.00, 1.10        | 1.21, 1.28       |
+|224x224       | 1.42, 1.47        | 1.48, 1.55       |
 
 ### Original dataset
 
@@ -50,6 +50,8 @@ This dataset consist of 48k train images and 5k test images. All face detections
 |64x64         | -              | -             |
 |224x224       | -              | -             |
 
+## Notes
+In the original paper, authors wrote that the toal of train, test and validation images is about 1.5 M, but I found that a lot of images are annotated with negative coordinates of the face's bounding box, so I can train and test my network on a lower amount of data. Waiting for the authors' response.
 
 ## Acknowledgements
 This work is partially inspired by the work of [hugochan](https://github.com/hugochan).
