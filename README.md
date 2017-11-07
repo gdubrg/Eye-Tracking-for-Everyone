@@ -46,8 +46,8 @@ This dataset consist of 48k train images and 5k test images. All face detections
 ### Original dataset
 
 | Input Size   | MAE            | STD           |
-| :---         |     :---:      |          ---: |
-|64x64         | -              | -             |
+| :---:         |     :---:     |          :---: |
+|64x64         | 1.45, 1.67     | 1.43, 1.62    |
 |224x224       | -              | -             |
 
 ## Notes
