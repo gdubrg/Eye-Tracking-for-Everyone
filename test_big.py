@@ -1,7 +1,4 @@
 import os
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "4"
-
 from load_data import load_data_names, load_batch_from_names, load_batch_from_names_fixed
 from models import get_eye_tracker_model
 import numpy as np
@@ -16,6 +13,9 @@ def generator(data, batch_size, img_ch, img_cols, img_rows):
 
 
 def test_big(args):
+
+	os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+	os.environ["CUDA_VISIBLE_DEVICES"] = args.dev
 
     names_path = ""
     print("Names to test: {}".format(names_path))
