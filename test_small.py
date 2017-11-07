@@ -5,14 +5,6 @@ from models import get_eye_tracker_model
 import numpy as np
 
 
-def generator(data, batch_size, img_ch, img_cols, img_rows):
-
-    while True:
-        for it in list(range(0, data[0].shape[0], batch_size)):
-            x, y = load_batch([l[it:it + batch_size] for l in data], img_ch, img_cols, img_rows)
-            yield x, y
-
-
 def test_small(args):
 
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
