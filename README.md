@@ -1,5 +1,5 @@
 # Eye Tracking for Everyone
-This is an implementation in **Keras** and **Tensorflow** of the famous paper published in **CVPR 2016** by *Torralba et al*.
+Implementation in **Keras** and **Tensorflow** of the famous paper published in **CVPR 2016** by *Torralba et al*.
 
 ## How To
 ### Configuration
